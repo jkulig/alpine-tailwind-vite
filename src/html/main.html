@@ -1,0 +1,10 @@
+<div class="container my-32">
+    <h1 class="text-3xl text-pink-400 text-center mb-5">Alpine + Tailwind + Vite</h1>
+    
+    <div x-data="{ open: false }" class="text-center">
+        <button @click="open = ! open" class="py-2 px-4 bg-pink-600 text-white rounded mb-3">Toggle</button> 
+        <div x-show="open" @click.outside="open = false">
+            <p>Starter pack for AlpineJS / TailwindCSS / Vite. Feel free to contribute!</p>
+        </div>
+    </div>
+</div>
